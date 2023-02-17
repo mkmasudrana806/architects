@@ -26,8 +26,9 @@ nav{
 .nav-items a{
     margin-left: 30px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
 }
+
 
 /* webpage brand or group indentity part  */
 .brand-identity{
@@ -49,6 +50,7 @@ background-color: orange;
 color: white;
 font-size: 17px;
 }
+
 /* webpage banner  */
 .banner{
     margin-top: 80px;
@@ -56,6 +58,7 @@ font-size: 17px;
 .banner img{
 width: 100%;
 }
+
 
 /* main body of the webpage */
 main{
@@ -86,6 +89,7 @@ main{
 .features-details h1{
     font-size:45px;
 }
+
 
 /* features you will learn section  */
 .features-learn-architect-section{
@@ -122,6 +126,7 @@ font-size:20px;
 width: 100%;
 }
 
+
 /* 10 years experience part  */
 .experience-part{
 background: orange;    width: 250px;
@@ -143,6 +148,7 @@ background: orange;    width: 250px;
     font-size: 25px;
 }
 
+
 /* some facts section  */
 .some-facts{
    width: 500px;
@@ -150,7 +156,6 @@ background: orange;    width: 250px;
 .some-facts h1{
     font-size:45px;
     margin: 0px;
-
 }
 
 /* some facts with achievements  */
@@ -170,6 +175,8 @@ background: orange;    width: 250px;
     align-items: center;
     animation: border_blink 1s ease-in 0.5s infinite;
 }
+
+
 /* animation for achievement card border  */
 @keyframes border_blink {
     0%   {
@@ -199,6 +206,118 @@ background: orange;    width: 250px;
     margin: 10px;
 }
 
+
+/* our services, extra section  */
+.plan-section{
+    background-image: linear-gradient(rgb(123, 255, 0), rgb(218, 34, 65), green, orange, tomato);
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 0px 50px 0px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.plan-services{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.plan-services h1{
+    font-size: 45px;
+    margin: 0px;
+}
+
+.services{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.service{
+    width: 300px;
+    height: 425px;
+}
+.service button{
+    width: 280px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.basic-plan{
+    border:2px solid #1e11d1;
+    border-radius: 0px 23px 0px 20px;
+}
+.basic{
+    background-color: #1e11d1;
+}
+.basic-plan button{
+    background-color: #1e11d1;
+}
+
+.standard-plan{
+    border:2px solid #590aec;
+    border-radius: 0px 23px 0px 20px;
+}
+.standard{
+    background-color: #590aec;
+}
+.standard-plan button{
+    background-color: #590aec;
+}
+.standard-plan > div > p{
+    color: rgb(3, 137, 247);
+}
+.premium-plan > div > p{
+    color: rgb(7, 241, 58);
+}
+
+.premium-plan{
+    border:2px solid  #0a64ec;
+    border-radius: 0px 23px 0px 20px;
+}
+.premium{
+    background-color: #0a64ec;
+}
+.premium-plan button{
+    background-color:  #0a64ec;
+}
+
+.basic,.standard,.premium{
+    width: 300px;
+    height: 100px;
+    border-radius: 0px 20px 0px 20px;
+    color: white;
+}
+.basic div,.standard div,.premium div{
+    margin-left: 10px;
+}
+.basic h1,.standard h1, .premium h1{
+    margin:0px;
+    font-size: 40px;
+}
+.basic p,.standard p, .premium p{
+    margin-top: 5px;
+}
+.price{
+    font-size: 35px;
+}
+.plan-option{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.plan-option p{
+    margin: 15px;
+}
+.fa-check{
+    color: green;
+}
+.fa-xmark{
+    color: red;
+}
+
+
 /* our sponsor companry */
 .our-spoonsor{
     width: 500px;
@@ -220,6 +339,7 @@ background: orange;    width: 250px;
  filter: grayscale(100%);
 }
 
+
 /* footer section  */
 footer{
     height: 400px;
@@ -239,5 +359,5 @@ footer p{
     justify-content: space-between;
 }
 .footer-section div{
-    margin-top: 100px;
+    margin-top: 80px;
 }
