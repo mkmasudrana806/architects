@@ -160,15 +160,36 @@ background: orange;    width: 250px;
     margin-top: 50px;
 }
 .achievement{
-    width: 240px;
-    height: 240px;
-    border: 2px solid orangered;
+    width: 230px;
+    height: 230px;
+    border: 5px solid;
+    border-image: linear-gradient(60deg,red, blue, orange, green) 1;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    animation: border_blink 1s ease-in 0.5s infinite;
 }
+/* animation for achievement card border  */
+@keyframes border_blink {
+    0%   {
+        border: 5px solid;
+    border-image: linear-gradient(60deg,blue, green, red, green) 1;
+    }
+    25%  {
+        border: 5px solid;
+        border-image: linear-gradient(60deg,green, red, orange, blue) 1;
+    }
+    50%  {
+        border: 5px solid;
+    border-image: linear-gradient(60deg,orange, blue, red, green) 1;
+    }
+    100% {
+        border: 5px solid;
+    border-image: linear-gradient(60deg,red, green, orange, blue) 1;
+    }
+}
+
 .achievement h1{
     font-size: 45px;
     margin: 10px;
