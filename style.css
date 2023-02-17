@@ -198,3 +198,25 @@ background: orange;    width: 250px;
 .sponsor-list img{
  filter: grayscale(100%);
 }
+
+/* footer section  */
+footer{
+    height: 400px;
+    background-color: #141414;
+    margin-top: 80px;
+}
+footer h1{
+    color: white;
+}
+footer p{
+    color: rgb(180, 171, 171);
+}
+.footer-section{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section div{
+    margin-top: 100px;
+}
