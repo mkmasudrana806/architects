@@ -1,4 +1,7 @@
 /* navigation part or header part  */
+p{
+    font-size: 20px;
+}
 .header-section{
 background-color: antiquewhite;
 padding-bottom: 50px;
@@ -54,6 +57,11 @@ font-size: 17px;
 width: 100%;
 }
 
+/* main body of the webpage */
+main{
+    width: 1100px;
+    margin: 0 auto;
+}
 /* features section  */
 .our-features-section{
     width: 1100px;
@@ -112,4 +120,81 @@ font-size:20px;
 }
 .architect img{
 width: 100%;
+}
+
+/* 10 years experience part  */
+.experience-part{
+background: orange;    width: 250px;
+    height: 150px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 450px;
+    position: relative;
+    top: -80px;
+}
+.experience-part h1{
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.experience-part p{
+    font-size: 25px;
+}
+
+/* some facts section  */
+.some-facts{
+   width: 500px;
+}
+.some-facts h1{
+    font-size:45px;
+    margin: 0px;
+
+}
+
+/* some facts with achievements  */
+.achievements{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+.achievement{
+    width: 240px;
+    height: 240px;
+    border: 2px solid orangered;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.achievement h1{
+    font-size: 45px;
+    margin: 10px;
+}
+.achievement p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* our sponsor companry */
+.our-spoonsor{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.our-spoonsor h1{
+    font-size: 45px;
+    margin: 20px;
+}
+.sponsor-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.sponsor-list img{
+ filter: grayscale(100%);
 }
