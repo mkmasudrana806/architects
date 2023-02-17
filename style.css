@@ -268,9 +268,10 @@ background: orange;    width: 250px;
 }
 .standard-plan > div > p{
     color: rgb(3, 137, 247);
+    color: white;
 }
 .premium-plan > div > p{
-    color: rgb(7, 241, 58);
+    color: rgb(0, 110, 255);
 }
 
 .premium-plan{
