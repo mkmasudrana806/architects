@@ -167,32 +167,38 @@ background: orange;    width: 250px;
 .achievement{
     width: 230px;
     height: 230px;
-    border: 5px solid;
+    border: 3px solid;
+    animation: border_blink 1s ease-in 0.5s infinite;
+    border: 3px solid;
     border-image: linear-gradient(60deg,red, blue, orange, green) 1;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: border_blink 1s ease-in 0.5s infinite;
+    
 }
-
-
+/* animation for achievement card ,when it will hover  */
+/* .achievement:hover{
+    animation: border_blink 1s ease-in 0.5s infinite;
+    border: 3px solid;
+    border-image: linear-gradient(60deg,red, blue, orange, green) 1;
+} */
 /* animation for achievement card border  */
 @keyframes border_blink {
     0%   {
-        border: 5px solid;
+        border: 3px solid;
     border-image: linear-gradient(60deg,blue, green, red, green) 1;
     }
     25%  {
-        border: 5px solid;
+        border: 3px solid;
         border-image: linear-gradient(60deg,green, red, orange, blue) 1;
     }
     50%  {
-        border: 5px solid;
+        border: 3px solid;
     border-image: linear-gradient(60deg,orange, blue, red, green) 1;
     }
     100% {
-        border: 5px solid;
+        border: 3px solid;
     border-image: linear-gradient(60deg,red, green, orange, blue) 1;
     }
 }
@@ -209,7 +215,7 @@ background: orange;    width: 250px;
 
 /* our services, extra section  */
 .plan-section{
-    background-image: linear-gradient(rgb(123, 255, 0), rgb(218, 34, 65), green, orange, tomato);
+    /* background-image: linear-gradient(rgb(123, 255, 0), rgb(218, 34, 65), green, orange, tomato); */
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -249,21 +255,14 @@ background: orange;    width: 250px;
     border:2px solid #1e11d1;
     border-radius: 0px 23px 0px 20px;
 }
-.basic{
+.basic,.basic-plan button{
     background-color: #1e11d1;
 }
-.basic-plan button{
-    background-color: #1e11d1;
-}
-
 .standard-plan{
     border:2px solid #590aec;
     border-radius: 0px 23px 0px 20px;
 }
-.standard{
-    background-color: #590aec;
-}
-.standard-plan button{
+.standard,.standard-plan button{
     background-color: #590aec;
 }
 .standard-plan > div > p{
@@ -273,18 +272,13 @@ background: orange;    width: 250px;
 .premium-plan > div > p{
     color: rgb(0, 110, 255);
 }
-
 .premium-plan{
     border:2px solid  #0a64ec;
     border-radius: 0px 23px 0px 20px;
 }
-.premium{
+.premium,.premium-plan button{
     background-color: #0a64ec;
 }
-.premium-plan button{
-    background-color:  #0a64ec;
-}
-
 .basic,.standard,.premium{
     width: 300px;
     height: 100px;
@@ -351,7 +345,7 @@ footer h1{
     color: white;
 }
 footer p{
-    color: rgb(180, 171, 171);
+    color: #b4abab;
 }
 .footer-section{
     width: 1100px;
@@ -361,4 +355,84 @@ footer p{
 }
 .footer-section div{
     margin-top: 80px;
+}
+
+
+/* ---------------------- 
+                 media query for mobile device
+                 -------------------------------------------- */
+@media screen and (max-width:576px) {
+    /* common flex-direction for some class  */
+.nav-items,.our-features-section,.achievements,.services,.sponsor-list,.footer-section{
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* common width for some class */
+main,nav,header,.nav-items,.brand-identity,.banner,.banner img,.our-features-section,.team-album,.features-details,.features-learn-architect-section,.architect,.architect img,.features-learn,.some-facts,.plan-services,.our-spoonsor,.footer-section{
+    width: 100%;
+}
+/* common height for some img and class */
+.banner img,.architect,footer{
+    height: 100%;
+}
+/* common margin-top 50px for some class  */
+.banner,.features-details,footer{
+    margin-top: 50px;
+}
+/* common margin-top 20px for some class and tags */
+.some-facts,.achievement,.service,.sponsor-list img{
+    margin-top: 20px;
+}
+/* common font size (35px) for some tag  */
+.heading-title,.brand-identity h1,.features-details h1,.features-enjoy,.experience-part h1,.some-facts h1,.our-spoonsor h1,.plan-services h1,.service h1{
+    font-size: 30px;
+}
+/* header section start */
+.nav-items div{
+    display: flex;
+    justify-content: space-between;
+}
+.brand-identity{
+    margin-top: 100px;
+}
+.banner{
+    height: 250px;
+}
+
+/* team album and features */
+.team-album{
+    grid-template-columns: repeat(1, 1fr);
+}
+.features-learn-architect-section{
+    flex-direction: column-reverse;
+}
+.features-learn{
+    margin-top: 100px;
+}
+.experience-part{
+    margin-left: 70px;
+    width: 200px;
+    height: 100px;
+    top: -1000px;
+}
+
+/* some fact  and achievements*/
+.achievement{
+    width: 60%;
+}
+
+/* our services and plan section */
+.plan-section{
+     background-image: linear-gradient(rgb(123, 255, 0), rgb(218, 34, 65), green, orange, tomato);
+}
+.sponsor-list img{
+    width: 60%;
+    filter: grayscale(0%);
+}
+
+   /* footer section  */
+.footer-section div{
+   margin: 0 auto;
+}
 }
