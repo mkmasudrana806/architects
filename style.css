@@ -512,10 +512,12 @@ main,nav,header,.nav-items,.brand-identity,.banner,.banner img,.our-features-sec
 
 /* our services and plan section */
 .plan-section{
-     background-image: linear-gradient(rgb(123, 255, 0), rgb(218, 34, 65), green, orange, tomato);
+     background-image: linear-gradient(rgb(146, 79, 253), rgba(228, 9, 93, 0.575), green, orange, tomato);
 }
 .service{
     width: 95%;
+    height: max-content;
+    padding-bottom: 20px;
 }
 .basic,.premium,.standard{
     width: 100%;
